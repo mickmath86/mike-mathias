@@ -1,4 +1,5 @@
 import { type Metadata } from 'next'
+import { Analytics } from "@vercel/analytics/react"
 
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
