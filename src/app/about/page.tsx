@@ -69,58 +69,48 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Spencer Sharp. I live in New York City, where I design the
-            future.
+          A tech-driven producer who turned a love for gaming into a career creating global campaigns, always chasing that same sense of wonder.    
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+             
+              I’ve always had a thing for technology, ever since that fateful day I booted up X-Wing on a Windows PC. That game wasn’t just a bunch of pixels on a screen; it was a portal to another universe. I was hooked—completely, utterly fascinated. Soon, I was tearing through code, creating my own skins for Counter-Strike, molding the game into something personal. It wasn’t just the games themselves; it was the raw, unfiltered potential of computers that got me. These machines could be anything, do anything, if only you knew how to ask them the right questions.
+              </p>
+              <p>
+              Then came the Apple Store. I took a job during the release of the very first iPhone—a moment in time that felt like the dawn of a new civilization. People lined up for hours, faces lit up like kids seeing Disneyland for the first time. There was something primal in their awe. That little device had the power to change lives, and I wanted to know everything about it. I watched people cradle their new iPhones like precious artifacts, and in that instant, I realized I wanted to create moments like that. To give people something that not only worked but inspired them to see the world differently.
+              </p>
+              <p>
+              After that, my path led me to Los Angeles, where I landed my first agency gig. If Apple opened the door, this job blew it off its hinges. I was surrounded by some of the most ingenious tech minds I had ever encountered—wizards with keyboards, masters of algorithms, and digital alchemists who could turn code into experiences that connected people around the world. It was intoxicating, and it wasn’t just work; it was a cosmic dance of creativity and precision. It’s also where I met my wife, Dana, which, in itself, felt like finding a rare, perfectly engineered algorithm of life.
+              </p>
+              <p>
+              Marketing and advertising became my playground, where the art of communication and the science of technology collided in spectacular fashion. I’ve been lucky enough to work on projects that have made a real dent in the universe, touching millions of people in ways I never imagined when I was just a kid, huddled over my keyboard, skinning virtual characters.
+              </p>
+              <p>
+              Now, here I am in Ventura County, living life with Dana and our son Ryan, who we welcomed into the world in 2023. There’s something poetic about it all—how the journey from coding Counter-Strike mods in my bedroom led to this. Every day, I’m still chasing that thrill, still staring at screens with the same wonder I had back when I first discovered what they were capable of. The world keeps turning, technology keeps evolving, and I’m just lucky enough to be along for the ride.
             </p>
-            <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
-            </p>
-            <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
-            </p>
-            <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
-            </p>
+            
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={XIcon}>
+            <SocialLink href="https://x.com/mickmath86" icon={XIcon}>
               Follow on X
             </SocialLink>
-            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+            <SocialLink href="https://www.instagram.com/mickmath/" icon={InstagramIcon} className="mt-4">
               Follow on Instagram
             </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+            <SocialLink href="https://github.com/mickmath86" icon={GitHubIcon} className="mt-4">
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+            <SocialLink href="https://www.linkedin.com/in/mmathias86/" icon={LinkedInIcon} className="mt-4">
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
-              href="mailto:spencer@planetaria.tech"
+              href="mailto:mickmath86@gmail.com"
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              spencer@planetaria.tech
+              mickmath86@gmail.com
             </SocialLink>
           </ul>
         </div>

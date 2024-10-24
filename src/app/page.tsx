@@ -90,14 +90,19 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 function Article({ article }: { article: ArticleWithSlug }) {
   return (
     <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
+      <Card.Title href={`/projects/${article.slug}`}>
+        {article.title} - {article.client}
       </Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
         {formatDate(article.date)}
       </Card.Eyebrow>
+      <Image className="z-10"src={article.image} width={500} height={500} alt="project"/>
+      <div className="flex flex-row gap-2 py-4 z-10">
+        <div className=" border rounded-md px-4">Role: {article.function}</div>
+        <div className="border w-auto rounded-md px-4">Agency: {article.agency}</div>
+      </div>
       <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
+      <Card.Cta>View Project</Card.Cta>
     </Card>
   )
 }
@@ -188,7 +193,7 @@ function Role({ role }: { role: Role }) {
         </dd>
         {role.agency && (<div className="flex flex-row gap-2 text-sm text-zinc-400 dark:text-zinc-500 font-semibold">Agency: 
             {role.agency.map((agent:string, key:number) => (
-              <div className="font-normal">
+              <div key={key} className="font-normal">
                  {agent}
               </div>
         
@@ -251,7 +256,7 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button href="https://drive.usercontent.google.com/download?id=1n-SfTH1TxcrFrnBhCQpZW6m_UUj7Vchg&export=download&authuser=1" variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -294,11 +299,10 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-          Tech marketer, Real estate strategist, and growth enabler.
+          Tech lover. Problem solver. Producer by trade. Explorer by night. 
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I'm Mike, a real estate strategist and tech marketer with experience working with high-tech companies like Google and Nike. 
-          Now, as the Co-founder of MasterKey, I help investors streamline property management with innovative, tech-driven solutions.
+          My name is Mike, and I’m a producer and marketer with a deep passion for technology, working to create impactful experiences for global brands while living in Ventura County with my wife, Dana, and our son, Ryan.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink href="https://x.com/mickmath86" aria-label="Follow on X" icon={XIcon} />
@@ -323,13 +327,20 @@ export default async function Home() {
       <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
+          <div>
+          <div className="text-xl font-bold mb-10">Projects</div>
           <div className="flex flex-col gap-16">
+            
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
           </div>
+
+
+          </div>
+        
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            {/* <Newsletter /> */}
             <Resume />
           </div>
         </div>
