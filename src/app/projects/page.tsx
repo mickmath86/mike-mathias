@@ -10,7 +10,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
     <article className="md:grid md:grid-cols-4 md:items-baseline">
       <Card className="md:col-span-3">
        
-          <Image height={150} width={150} alt="Project Image" src={article.image} className="w-full h-full mb-4"/>
+          <Image height={150} width={150} alt="Project Image" src={article.image} className="w-full h-full mb-4 z-10"/>
           <div>
           <Card.Title href={`/projects/${article.slug}`} >
             <div className="z-20">{article.title} - {article.client}</div> 
