@@ -183,14 +183,14 @@ function Role({ role }: { role: Role }) {
          
         </dd>
         <dt className="sr-only">Date</dt>
-        <dd
+        {/* <dd
           className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
           aria-label={`${startLabel} until ${endLabel}`}
         >
           <time dateTime={startDate}>{startLabel}</time>{' '}
           <span aria-hidden="true">—</span>{' '}
           <time dateTime={endDate}>{endLabel}</time>
-        </dd>
+        </dd> */}
         {role.agency && (<div className="flex flex-row gap-2 text-sm text-zinc-400 dark:text-zinc-500 font-semibold">Agency: 
             {role.agency.map((agent:string, key:number) => (
               <div key={key} className="font-normal">
