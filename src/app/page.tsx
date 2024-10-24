@@ -14,6 +14,8 @@ import {
 import googleLogo from '@/images/logos/google.webp'
 import nikeLogo from '@/images/logos/nike.png'
 import samsungLogo from '@/images/logos/samsung.jpeg'
+import pg from  '@/images/logos/pg.png'
+import linkedIn from '@/images/logos/linkedIn.png'
 import rgaLogo from '@/images/logos/rga.png'
 import targetCloseLogo from '@/images/logos/targetclose.png'
 import kbLogo from '@/images/logos/kb-icon.png'
@@ -238,6 +240,22 @@ function Resume() {
       title: 'Ad Campaign Strategy, Video Ad Production',
       logo: ampLogo,
       agency: ["R/GA", ""],
+      start: '2011',
+      end: '2014',
+    },
+    {
+      company: 'LinkedIn',
+      title: 'Front End Web Development',
+      logo: linkedIn,
+      agency: ["Kickbord", ""],
+      start: '2011',
+      end: '2014',
+    },
+    {
+      company: 'P&G',
+      title: 'Web Development & Conversion Rate Optimization',
+      logo: pg,
+      agency: ["TargetClose", ""],
       start: '2011',
       end: '2014',
     },
